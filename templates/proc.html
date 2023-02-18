@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% if flag %}
+    {% block meta %}
+    <meta http-equiv="Refresh" content="0; url='/download?q=&quot;{{q}}&quot;'" />
+    {% endblock meta %}
+{% endif %}
+
+{% block style %}
+<style>
+    #btns{
+        pointer-events:none;
+        opacity: 0.65;
+        cursor: not-allowed;
+    }
+    #homebtn{
+        cursor: not-allowed;
+    }
+    #howbtn{
+        cursor: not-allowed;
+    }
+    #sampbtn{
+        cursor: not-allowed;
+    }
+    #aboutbtn{
+        cursor: not-allowed;
+    }
+    #donatebtn{
+        cursor: not-allowed;
+    }
+</style>
+{% endblock style %}
+
+{% block main %}
+
+<div id="loading">
+    <img class="media" src="{{ fpath }}" alt="loading...">
+    <div class="typing">Processing . . . . .</div>
+</div>
+
+{% endblock main %}

@@ -1,0 +1,698 @@
+@font-face {
+    font-family: kanit;
+    src: url('Exo-VariableFont_wght.ttf');
+}
+
+html, body {
+    height: 100%;
+}
+
+*{
+    color: #fffbf9;
+}*
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('bg-temp.jpeg');
+    /*background: #121212;*/
+    background-size:100% auto;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+}
+
+#fraw{
+    display:none
+}
+
+.cont{
+    display: flex;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3{
+    border: 1px solid white;
+    width: 22px;
+    height: 1px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+  }
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translate(0, -8px) rotate(45deg);
+}
+
+#btns{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbtn{
+    margin-top: 20px;
+    background:transparent;
+    color: #fffbf9;
+    border: 0;
+    height: 60px;
+    font-size: 22px;
+    width: 180px;
+    padding: 10px; 
+    cursor: pointer;  
+    font-family: kanit;
+}
+
+.navbtn:hover{
+    border-bottom: 2px solid #dedede;
+    background : linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4))
+}
+
+/*.navbtn:focus{
+    background-color: orange;
+}*/
+
+/*home.html*/
+
+#banner{
+    font-size: 20px;
+    height: 340px;
+}
+
+#main{
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: kanit;
+}
+
+#title{
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;  
+}
+
+h4{
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: kanit;
+}
+
+.divtbl{
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.ele{
+    text-align: center;
+}
+
+#qry{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    font-size: 20px;
+    height: 48px;
+    background: #DEDEDE;
+    padding-left: 10px;
+    margin: 10px;
+    font-family: kanit;
+    font-weight: bold;
+    color: #242628;
+    border-radius: 2px;
+    border: #fffbf9 3px solid;
+}
+
+#qry:hover{
+    border: 3px solid #010101;
+    border-radius: 2px;
+}
+
+#qry:focus{
+    outline: none;
+    border: 3px solid #242628;
+    border-radius: 2px;
+}
+
+::placeholder{
+    color: #898989;
+}
+
+#sb{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    color: #242628;
+    background: #f96900;
+    height: 56px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: kanit;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    width: 100px;
+}
+
+#sb:hover{
+    background: #fffbf9;
+}
+
+#footer {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: kanit;
+}
+
+/*proc.html*/
+.media{
+    display:block;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+#loading{
+    text-align: center;
+    font-family: kanit;
+    font-size: 20px;
+}
+
+.typing{
+    animation: typing 2s steps(15), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: kanit;
+    animation-iteration-count: infinite;
+    width: 15ch;
+    height: fit-content;
+    font-size: 24px;
+    margin: 0 auto;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
+
+/*download.html*/
+#output{
+    margin-top: 30px;
+}
+
+#opvid{
+    border:2px solid white;
+}
+
+#opts{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: kanit;
+}
+
+.opt{
+    width: 225px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: #242628;
+    background: #f96900;
+    height: 44px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+    font-family: kanit;
+}
+
+.opt:hover{
+    background: #fffbf9;
+    color: #f96900;
+}
+
+opt:active{
+    background-color: #fffbf9;
+}
+
+.time{
+    font-size: 22px;
+}
+
+/*auto.html*/
+
+.rt{
+    font-size: 20px;
+}
+
+#ad{
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    width: 60%;
+}
+
+#auto{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    color: #242628;
+    background: #f96900;
+    margin: 10px;
+    font-size: 20px;
+    font-family: kanit;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    padding: 15px;
+    width: 200px;
+}
+
+#auto:hover{
+    background: #fffbf9;
+}
+
+pre{
+    font-weight: bold;
+}
+
+/*how.html*/
+#how{
+    text-align: justify;
+    width:fit-content;
+    margin:0 auto;
+    margin-top:30px;
+    font-family: kanit;
+    font-size: 24px;
+}
+
+#hw{
+    height: 500px;
+}
+
+
+/*about.html*/
+.about{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: justify;
+    width: 900px;
+    font-family: kanit;
+    font-size: 20px;
+    padding: 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)); 
+    background-position: center center;
+}
+
+.des{
+    font-weight: bold;
+    color: #000000;
+}
+
+#disbox{
+    width: 65%;
+    pointer-events: none;
+}
+
+#rar{
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+}
+
+#dar{
+    display: none;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+}
+
+.stxt{
+    font-weight: bold;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.vidbox{
+    margin: 0 auto;
+    font-family: kanit;
+    justify-content: center;
+}
+
+iframe{
+    height: 400px;
+    width: 225px;
+    border: #fffbf9 3px solid;
+}
+
+/*error.html*/
+
+.robot{
+    margin:0 auto;
+    margin-top: 50px;
+    width: fit-content;
+    text-align: center;
+}
+
+pre{
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-size: auto 120%;
+    }
+
+    #title{
+        width: 700px;
+    }
+
+    #btns{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbtn{
+        width: 18%;
+        font-size: medium;
+        padding: 0;
+        margin: 0;
+    }
+
+    .divtbl{
+        /*display: block;*/
+        margin-top: 20px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .typing,.vidbox,.abt{
+        font-size: 14px;
+    }
+
+    .txt{
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+    }
+
+    #qry, #sb{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    html{
+        width: 100%;
+    }
+
+    body{
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('bg-temp.jpeg');
+        background-position: center center;
+        background-size: auto 170%;
+    }
+
+    nav{
+        display: block;
+        background: transparent;
+        height: fit-content;
+    }
+
+    #fraw{
+        display: flex;
+        align-items: center;
+        border-spacing: 10px;
+    }
+
+    .cont{
+        display: inline-block;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .bnr{
+        display: flex;
+        vertical-align: middle;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 0px;
+        align-items: center;
+        text-align: center;  
+        font-family: kanit;
+    }
+
+    #btns{
+        display: none;
+        border-top: 2px solid white;
+    }
+
+    .navbtn{
+        width: 100%;
+        font-size: 18px;
+        padding: 0;
+        border: 2px solid white;
+        font-weight: bold;
+    }
+
+    #banner{
+        height: 200px;
+    }
+
+    #main{
+        width: min-content;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    #title{
+        margin: 5px;
+        width: 320px;
+        text-align: justify;
+    }
+
+    h4,.typing,.vidbox{
+        font-size: 20px;
+    }
+
+    h4{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .divtbl{
+        display: block;
+        font-size: 10px;
+        height: 40px;
+        width: 275px;
+    }
+
+    form{
+        display: block;
+    }
+    
+    #qry{
+        margin: 10px;
+        font-size: 14px;
+        width: 230px;
+        padding: 5px;
+        height: 40px;
+    }
+    
+    #sb{
+        margin: 10px;
+        font-size: x-small;
+        width: 245px;
+        height: 44px;
+    }
+
+    #footer{
+        font-size: 10px;
+        height: 30px;
+    }
+
+    /*proc.html*/
+    #output{
+        margin-top: 10px;
+    }
+
+    #opvid{
+        border:2px solid white;
+    }
+    
+    #opts{
+        width: 320px; 
+    }
+
+    /*how.html*/
+
+    #how{
+        width:80%;
+        margin:0 auto;
+        margin-top:20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #hw{
+        height:200px;
+    }
+
+    /*about.html*/
+    .about{
+        width: 320px;
+        display: block;
+        text-align: justify;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #disbox{
+        width: 100%;
+    }
+
+    .vidbox{
+        display: block;
+        width: fit-content;
+    }
+
+    #rar{
+        display: none;
+    }
+
+    #dar{
+        display: block;
+    }
+
+    /*error.html*/
+    .robot{
+        margin:0 auto;
+        width: fit-content;
+    }
+    
+    pre{
+        margin-top: 50px;
+        font-size: 24px;
+    }
+
+    #err{
+        margin-top: 50px;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:320px){
+    #fraw{
+        width: 98%.5;
+    }
+
+    .divtbl{
+        width: 270px;
+    }
+
+    form{
+        display: block;
+    }
+
+    #btns{
+        width: 100%;
+    }
+
+    .navbtn{
+        font-size: 10px;
+        height: 30px;
+        font-weight: bold;
+    }
+
+    #main{
+        width: 100%;
+        height: 300px;
+    }
+
+    #title{
+        font-size: 14px;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .typing,.vidbox,.abt{
+        font-size: 10px;
+    }
+
+    h4{
+        margin: 9px;
+        font-size: 12px;
+    }
+
+    /*proc.html*/
+    #output{
+        margin-top: 10px;
+    }
+
+    #opvid{
+        border:2px solid white;
+    }
+    
+    #opts{
+        width: 200px; 
+    }
+
+    .opt{
+        font-size: 10px;
+    }
+
+    /*sample.html*/
+    .vidbox{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .smp{
+        width: 280px;
+    }
+
+    /*about.html*/
+    .about{
+        width: 280px;
+    }
+
+    .abt{
+        text-align: justify;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style>
+    #autobtn{
+        border-bottom: 2px solid #dedede;
+    }
+</style>
+  
+{% endblock style %}
+
+{% block main %}
+<div id="ad">
+    <h4 class="rt">Here's some ASCII art for fun</h4>
+    <div class="robot">
+        <pre class="big text rt">
+|-----|
+[|#   #|]
+////_'-----'_\\\\
+||  [-------]  ||
+||  [ R-3PO ]  ||
+[\] [_______] [/]
+|/|   |\|
+/||   ||\
+|||   |||
+[[|]   [|]]
+    </pre>
+    </div>
+    <h4>Click to Proceed.</h4>
+    <a href="/ranproc"><button id="auto" onclick="cls()">Generate</button></a>
+</div>
+{% endblock main %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div id="output">
+    <video id="opvid" class = "media" height="400" controls muted >
+        <source src="{{ fpath }}" type="video/mp4">
+    Video is ready.
+    </video>
+    <div id="opts">
+        <!--<p class="time">The process took {{t}} minutes</p>-->
+        <a href="/link"><button class="opt">Download</button></a>
+    </div>
+</div>
+
+
+{% endblock main %}

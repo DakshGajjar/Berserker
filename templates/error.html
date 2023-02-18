@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="error">
+    <div class="robot">
+        <!--<pre class="big text">
+     |-----|
+    [|#   #|]
+////_'-----'_\\\\
+||  [-------]  ||
+||  [ ERROR ]  ||
+[\] [_______] [/]
+    |/|   |\|
+    /||   ||\
+    |||   |||
+   [[|]   [|]]
+           </pre>-->
+
+        <img id ="err" src="{{ url_for('static',filename='error.gif') }}" alt="loading...">
+    </div>
+</div>
+  
+{% endblock main %}

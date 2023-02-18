@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ title }} | BERSERKER</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block meta %}
+        {% endblock meta %}
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static',filename='icon.png') }}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='home.css') }}">
+
+        {% block style %}
+        {% endblock style %}
+
+    </head>
+    <body>
+        <nav>
+            <div id="fraw">
+                <div class="cont" onclick="func(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="bnr">
+                    <h4>B</h4><h4>E</h4><h4>R</h4><h4>S</h4><h4>E</h4><h4>R</h4><h4>K</h4><h4>E</h4><h4>R</h4>
+                </div>
+            </div>
+            <div id="btns">
+                <a href="/"><button id="homebtn" class="navbtn">Home</button></a>
+                <a href="/ran"><button id="autobtn" class="navbtn">Auto Mode</button></a>
+                <a href="/how"><button id="howbtn" class="navbtn">How it works</button></a>
+                <a href="/about"><button id="aboutbtn" class="navbtn">About</button></a>
+                <a href="https://commerce.coinbase.com/checkout/60ccdc73-0079-45da-832a-085b171ccb33" target="_blank" rel="noopener noreferrer"><button id="donatebtn" class="navbtn">Donate</button></a>
+            </div>
+        </nav>
+        {% block main %}
+        {% endblock main%}
+        <div id = "footer">Created & Designed by <a href="mailto:executionerrulestheworld@gmail.com">Executioner</a></div>
+        <script src="{{ url_for('static',filename='home.js') }}" async defer></script>
+    </body>
+</html>

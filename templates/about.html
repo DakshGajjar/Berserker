@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style>
+    #aboutbtn{
+        border-bottom: 2px solid #dedede;
+    }
+</style>
+{% endblock style %}
+
+{% block main %}
+<div class="about">
+    <div id="disbox">
+        <p class="des">Berserker is a web application created to make short videos containing reddit posts and comments with a Minecraft gameplay background by just passing the keyword as an input. It follows one of the two video generation processes named custom and auto. In custom process post will be chosen by entered keyword, while, in auto, random post will be selected.</p>
+            
+        <p class="des">The website was built using the Python3 Flask framework. It uses the BeautifulSoup to scrape Reddit posts and comments. Apart from that, pyttsx3 was used to perform text to speech operations as well as moviepy was used to encode images and audio into the video. The whole application is implemented in pure Python3, except the web page layouts. The sample output is diplayed here <button id="rar">&rarr; &rarr; &rarr;</button><button id="dar">&darr; &darr; &darr;</button></p>
+    </div>
+
+    <div class="vidbox">
+        <iframe src="https://www.youtube.com/embed/s0vkKmLE0Z8" allowfullscreen></iframe>
+    </div>
+</div>
+{% endblock main %}

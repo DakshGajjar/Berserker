@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block meta %}
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+{% endblock meta %}
+
+{% block style %}
+<style>
+    #homebtn{
+        border-bottom: 2px solid #dedede;
+    }
+</style>
+  
+{% endblock style %}
+
+{% block main %}
+
+<div id="banner">
+    <img src="{{ url_for('static',filename='Berserker.png') }}" class="media" alt="">
+</div>
+
+<div id="main">
+    <div id="title">
+        <h4 class="txt">Application to generate a video containing screenshots of web-scrapped reddit post and comments with just one click.</h4>
+    </div>
+    <br>
+
+        <div class="divtbl">
+            <form name="kw" autocomplete="off" spellcheck="false" method="POST" action="/proc">
+                <div>
+                    <input name="query" id="qry" type="text" placeholder="Enter the keyword">
+                </div>
+                <div>
+                    <input type="submit" name="create" id="sb" value="Proceed">
+                </div>
+            </form>
+        </div>
+
+</div>
+
+{% endblock main %}
