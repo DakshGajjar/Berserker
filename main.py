@@ -89,11 +89,10 @@ def proc():
                 q = form_data['query']
                 if ' ' in q:
                     q = q.replace(' ','%20')
-                    with open('static/query.txt','w') as f:
-                        f.write(q)
+                qen = base64.b64encode(q.encode('utf-8')).decode('utf-8')
                 if len(os.listdir('static/output'))==0:
                     flag = True
-                return render_template("proc.html",title='Processing',q=q,fpath='../static/loading.gif',flag=flag)
+                return render_template("proc.html",title='Processing',q=qen,fpath='../static/loading.gif',flag=flag)
         else:
             return redirect(url_for('home'))
     except:
