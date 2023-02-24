@@ -12,8 +12,6 @@ app.config['SS_IMAGES'] = 'static/ss_imgs'
 app.config['SS_AUDIOES'] = 'static/ss_audioes'
 app.config['OUTPUT'] = 'static/output'
 
-os.system('sudo apt install espeak python3-pyaudio')
-
 def check():
     if os.path.exists('static/output') and os.path.exists('static/ss_imgs') and os.path.exists('static/ss_audioes'):
         if  len(os.listdir('static/output'))>0 and len(os.listdir('static/ss_imgs'))>0:
